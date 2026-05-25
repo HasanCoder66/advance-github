@@ -3,13 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Website Navbar</title>
+    <style>
+        /* Remove default margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Main Navbar Box */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #222; /* Dark background */
+            padding: 15px 40px;
+        }
+
+        /* Logo Text */
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        /* Links Container */
+        .nav-links {
+            list-style: none; /* Removes bullet points */
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 25px; /* Space between links */
+        }
+
+        /* Link Text */
+        .nav-links a {
+            color: white;
+            text-decoration: none; /* Removes underline */
+            font-size: 16px;
+            transition: color 0.3s ease; /* Smooth hover effect */
+        }
+
+        /* Link Hover Color */
+        .nav-links a:hover {
+            color: #00bcd4; /* Light blue color when mouse is over */
+        }
+    </style>
 </head>
 <body>
-    <nav>Navbar</nav>
-    
-    <h1>My Advance GitHub HTML File</h1>
 
-    <footer>this is a footer</footer>
+    <nav class="navbar">
+        <a href="#" class="logo">MyBrand</a>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
 </body>
 </html>
